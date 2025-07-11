@@ -13,6 +13,8 @@ h6 {
   line-height: 1.5em;
 }
 
+
+
 img {
   width: 100%;
   /* height: auto; */
@@ -246,14 +248,56 @@ Walker Nav
 Footer
 ============== */
 
+#main_footer {
+  background-color: #262626;
+  padding: 110px 50px;
+  border-bottom: 1px solid #dddddd27;
+}
+
+#main_footer .child_sidebar h2,#main_footer .child_sidebar p, #main_footer .child_sidebar a {
+  color: #fff;
+}
+#main_footer .child_sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+#main_footer .child_sidebar ul li ul {
+  display: none;
+}
+
+#main_footer .child_sidebar p {
+  padding-right: 124px;
+}
+
+#main_footer .wp-block-social-link {
+  width: 32px;
+  height: 32px;
+}
+
+#main_footer .wp-block-social-link a {
+  text-align: center;
+}
+
+#main_footer .wp-block-social-link a {
+  text-align: center;
+}
+
+#main_footer .wp-block-social-link a:hover {
+  background-size: 0 0;
+} 
+
+
+
 #copy_area {
   background: #262626;
-  padding: 12px 0;
+  padding: 24px 0;
   text-align: center;
+  margin: auto 0;
 }
 
 #copy_area p {
   color: #fff;
+  margin: 0;
 }
 
 #copy_area a {
