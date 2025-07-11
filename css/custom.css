@@ -28,7 +28,6 @@ body a {
   text-decoration: none;
 }
 
-
 /* header styling */
 #header_area img {
   max-width: 100%;
@@ -164,6 +163,65 @@ Walker Nav
   font-size: 14px;
 }
 
+/* ======== Sidebar Styling========== */
+
+
+
+.child_sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.child_sidebar input[type="search"] {
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: 0;
+}
+
+.child_sidebar button[type="submit"] {
+  background-color: #fff;
+  background-image: linear-gradient(#9240bc, #9240bc);
+  background-size: 12px 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 8px 24px;
+  color: #9240bc;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #9240bc;
+}
+
+.child_sidebar button[type="submit"]:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.child_sidebar ul li {
+  margin-bottom: 4px;
+}
+
+.child_sidebar ul li a {
+
+  color: #262626;
+  padding: 2px 0;
+  text-decoration: none;
+  font-weight: 600;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.child_sidebar ul li a:hover {
+  color: #9240bc;
+  background-size: 100% 1px;
+}
+
 /*============
 Footer
 ============== */
@@ -199,7 +257,7 @@ Footer
 .blog_area {
   padding: 24px;
   /* background: #ffffff; */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 
   border-radius: 8px;
   margin: 12px 0;
@@ -208,18 +266,16 @@ Footer
 .post_thumb {
   overflow: hidden;
   margin-bottom: 16px;
-   border-radius: 8px;
+  border-radius: 8px;
 }
 
 .post_thumb img {
- 
   width: 100%;
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
 }
 .post_thumb img:hover {
   transform: scale(1.1);
-
 }
 
 .post_title a {
@@ -237,9 +293,7 @@ Footer
   background-size: 100% 1px;
 }
 
-
 .post_details .readmore {
-  
   background-image: linear-gradient(#9240bc, #9240bc);
   background-size: 12px 100%;
   background-repeat: no-repeat;
@@ -254,5 +308,4 @@ Footer
 .post_details .readmore:hover {
   background-size: 100% 100%;
   color: #fff;
-  
 }
