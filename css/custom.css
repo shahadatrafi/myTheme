@@ -217,6 +217,26 @@ Walker Nav
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.child_sidebar .tag-cloud-link {
+  color: #262626;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-weight: 600;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 12px !important;
+  border: 1px solid #262626;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.child_sidebar .tag-cloud-link:hover {
+  color: #9240bc;
+  background-size: 100% 1px;
+}
 .child_sidebar ul li a:hover {
   color: #9240bc;
   background-size: 100% 1px;
