@@ -75,6 +75,7 @@ body a {
   text-align: left;
   top: 88px;
   width: 200px;
+  z-index: 999;
 }
 #header_area .col-md-9 ul li:hover ul {
   left: 0px;
@@ -244,9 +245,12 @@ Walker Nav
   background-size: 100% 1px;
 }
 
-/*============
-Footer
-============== */
+.child_sidebar .wp-block-categories-list {
+  list-style: none;
+  padding: 0;
+} 
+
+/**============ Footer ==============**/
 
 #main_footer {
   background-color: #262626;
@@ -545,4 +549,43 @@ Footer
   color: #999;
   padding: 8px;
   cursor: default;
+}
+
+
+/**============== ARCHIVE PAGE TITLE SECTION STYLING ====================**/
+
+.archive-page-title {
+  position: relative;
+  width: 100%;
+  background-image: url('https://img.freepik.com/free-photo/close-up-young-colleagues-having-meeting_23-2149060235.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.archive-page-title__overlay {
+  background: rgba(65, 20, 88, 0.601);  /* dark overlay for text readability */
+  /* box-shadow: 0 0 10px rgba(146, 64, 188, 0.5); */
+  padding: 40px;
+  max-width: 100%;
+  min-height: 350px;
+  margin: auto 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.archive-page-title__heading {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 700;
+  margin: auto 0;
+
+}
+
+.archive-page-title p {
+  font-size: 16px;
+  color: #f1f1f1;
+  line-height: 1.6;
 }
