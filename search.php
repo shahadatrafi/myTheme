@@ -1,6 +1,6 @@
 <?php
 
-// Displaying archive items
+// Displaying search items
 get_header();
 
 
@@ -11,7 +11,7 @@ get_header();
         <div class="archive-page-title">
             <div class="archive-page-title__overlay">
                 <h1 class="archive-page-title__heading">
-                    <?php the_archive_title();?>
+                    <?php printf(__('Search result for: %s', 'shahadatrafi'),get_search_query());?>
                 </h1>
                 
             </div>
