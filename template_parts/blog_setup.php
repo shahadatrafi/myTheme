@@ -1,5 +1,4 @@
-
-<?php 
+<?php
 
 // This template for blog area
 
@@ -27,3 +26,11 @@ if (have_posts()): while (have_posts()) : the_post();
 else : _e('No post found');
 endif;
 ?>
+<div id="page_nav">
+    <?php if ('ali_pagenav') {
+        rafi_pagenav();
+    } else { ?>
+        <?php next_posts_link(); ?>
+        <?php previous_posts_link(); ?>
+    <?php } ?>
+</div>

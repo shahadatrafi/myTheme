@@ -478,3 +478,71 @@ Footer
   color: #9240bc;
   font-weight: bold;
 }
+
+
+/* =============================
+   Pagination Styling (Themefy)
+   ============================= */
+
+#page_nav {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.wp_pagenav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.wp_pagenav .pages {
+  font-weight: 600;
+  color: #262626;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.wp_pagenav .pages span {
+  margin: 0 4px;
+  color: #9240bc;
+}
+.wp_pagenav .pages {
+  margin: 0 8px;
+}
+
+.wp_pagenav .page-numbers {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.wp_pagenav .page-numbers:hover {
+  background-color: #9240bc;
+  color: #fff;
+  border-color: #9240bc;
+}
+
+.wp_pagenav .page-numbers.current {
+  background-color: #9240bc;
+  color: #fff;
+  border-color: #9240bc;
+  cursor: default;
+}
+
+.wp_pagenav .page-numbers.dots {
+  background: transparent;
+  border: none;
+  color: #999;
+  padding: 8px;
+  cursor: default;
+}
