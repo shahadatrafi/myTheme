@@ -1,3 +1,12 @@
+
+<?php 
+
+// This template for pages
+
+?>
+
+
+
 <?php
 
 // Header 
@@ -10,7 +19,9 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <?php get_template_part('template_parts/blog_setup') ;?>
+
+            <?php get_template_part('template_parts/post_setup') ?>
+                
             </div>
             <div class="col-md-3">
                 <?php get_sidebar(); ?>
