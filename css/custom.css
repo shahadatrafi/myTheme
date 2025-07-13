@@ -589,3 +589,75 @@ Walker Nav
   color: #f1f1f1;
   line-height: 1.6;
 }
+
+
+/* ===============================
+   404 Error Page Styling
+   =============================== */
+
+.err-page {
+  text-align: center;
+  padding: 100px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.err-page .title_404 {
+  font-size: 72px;
+  color: #9240bc;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.err-page p {
+  font-size: 18px;
+  color: #262626;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Style the search form inside 404 page */
+.err-page input[type="text"] {
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  outline: 0;
+}
+
+.err-page input[type="submit"] {
+  background-color: #fff;
+  background-image: linear-gradient(#9240bc, #9240bc);
+  background-size: 12px 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 8px 24px;
+  color: #9240bc;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #9240bc;
+}
+
+.err-page input[type="submit"]:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+/* Home Button */
+.err-page a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 24px;
+  background-color: #9240bc;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.err-page a:hover {
+  background-color: #732f96;
+}
