@@ -63,6 +63,49 @@ function rafi_customizer_register($wp_customize)
         'setting' => 'rafi_footer_copy_area'
     ));
 
+    // Theme color
+
+    $wp_customize->add_section('rafi_colors', array(
+        'title' => __('Theme Colors', 'shahadatrafi'),
+        'description' => 'You can change your theme color here'
+    ));
+
+    $wp_customize->add_setting('rafi_primary_color', array(
+        'default' => '#9240bc'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_color_control($wp_customize, 'rafi_primary_color', array(
+
+        'label' => 'Primary Color',
+        'section' => 'rafi_colors',
+        'setting' => 'rafi_primary_color'
+
+    )));
+
+    $wp_customize->add_setting('rafi_text_color', array(
+        'default' => '#262626'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_color_control($wp_customize, 'rafi_text_color', array(
+        'label' => 'Text Color',
+        'section' => 'rafi_colors',
+        'setting' => 'rafi_text_color'
+    )));
 };
 
 add_action('customize_register', 'rafi_customizer_register');
+
+
+function rafi_color_cus()
+{
+?>
+    <style>
+        :root {
+            --primary: <?php echo get_theme_mod('rafi_primary_color')?>;
+            --text: <?php echo get_theme_mod('rafi_text_color')?>;
+        }
+    </style>
+<?php
+}
+
+add_action('wp_head', 'rafi_color_cus' );

@@ -1,3 +1,11 @@
+
+
+:root{
+  --primary: #9240bc;
+  --text: #262626;
+}
+
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -23,7 +31,7 @@ img {
 body p {
   font-size: 16px;
   line-height: 1.5em;
-  color: #262626;
+  color: var(--text);
 }
 
 body a {
@@ -54,7 +62,7 @@ body a {
   position: relative;
 }
 #header_area .col-md-9 ul li a {
-  color: #262626;
+  color: var(--text);
   padding: 20px 10px;
   display: block;
   text-transform: uppercase;
@@ -62,13 +70,13 @@ body a {
   font-size: 18px;
 }
 #header_area .col-md-9 ul li a:hover {
-  background: #9240bc;
+  background: var(--primary);
   color: #fff;
 }
 
 /*Dropdown Menu*/
 #header_area .col-md-9 ul li ul {
-  background: #262626 none repeat scroll 0 0;
+  background: var(--text) none repeat scroll 0 0;
   left: -99999px;
   margin: 0;
   position: absolute;
@@ -89,10 +97,10 @@ body a {
 }
 #header_area .col-md-9 ul li ul li a:hover {
   background: #ddd;
-  color: #262626;
+  color: var(--text);
 }
 #header_area .col-md-9 ul li:hover a {
-  background: #9240bc;
+  background: var(--primary);
   color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -113,15 +121,15 @@ body a {
   left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-  background: #9240bc;
+  background: var(--primary);
   color: #fff;
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
-  background: #262626;
+  background: var(--text);
   color: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-  background: #9240bc;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -186,16 +194,16 @@ Walker Nav
 
 .child_sidebar button[type="submit"] {
   background-color: #fff;
-  background-image: linear-gradient(#9240bc, #9240bc);
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-size: 12px 100%;
   background-repeat: no-repeat;
   background-position: left center;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 8px 24px;
-  color: #9240bc;
+  color: var(--primary);
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid #9240bc;
+  border: 1px solid var(--primary);
 }
 
 .child_sidebar button[type="submit"]:hover {
@@ -209,7 +217,7 @@ Walker Nav
 
 .child_sidebar ul li a {
 
-  color: #262626;
+  color: var(--text);
   padding: 2px 0;
   text-decoration: none;
   font-weight: 600;
@@ -221,7 +229,7 @@ Walker Nav
 }
 
 .child_sidebar .tag-cloud-link {
-  color: #262626;
+  color: var(--text);
   padding: 4px 8px;
   text-decoration: none;
   font-weight: 600;
@@ -231,17 +239,17 @@ Walker Nav
   background-position: left bottom;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
   font-size: 12px !important;
-  border: 1px solid #262626;
+  border: 1px solid var(--text);
   border-radius: 4px;
   margin-bottom: 8px;
 }
 
 .child_sidebar .tag-cloud-link:hover {
-  color: #9240bc;
+  color: var(--primary);
   background-size: 100% 1px;
 }
 .child_sidebar ul li a:hover {
-  color: #9240bc;
+  color: var(--primary);
   background-size: 100% 1px;
 }
 
@@ -253,7 +261,7 @@ Walker Nav
 /**============ Footer ==============**/
 
 #main_footer {
-  background-color: #262626;
+  background-color: var(--text);
   padding: 110px 50px;
   border-bottom: 1px solid #dddddd27;
 }
@@ -293,7 +301,7 @@ Walker Nav
 
 
 #copy_area {
-  background: #262626;
+  background: var(--text);
   padding: 24px 0;
   text-align: center;
   margin: auto 0;
@@ -347,7 +355,7 @@ Walker Nav
 }
 
 .post_title a {
-  color: #262626;
+  color: var(--text);
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px;
@@ -357,21 +365,21 @@ Walker Nav
 }
 
 .post_title a:hover {
-  color: #9240bc;
+  color: var(--primary);
   background-size: 100% 1px;
 }
 
 .post_details .readmore {
-  background-image: linear-gradient(#9240bc, #9240bc);
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-size: 12px 100%;
   background-repeat: no-repeat;
   background-position: left center;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 12px 24px;
-  color: #9240bc;
+  color: var(--primary);
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid #9240bc;
+  border: 1px solid var(--primary);
 }
 .post_details .readmore:hover {
   background-size: 100% 100%;
@@ -388,7 +396,7 @@ Walker Nav
 #comment_area h3.comment-reply-title {
   font-size: 24px;
   margin-bottom: 16px;
-  color: #262626;
+  color: var(--text);
   font-weight: 600;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 8px;
@@ -396,7 +404,7 @@ Walker Nav
 
 #comment_area small a#cancel-comment-reply-link {
   font-size: 14px;
-  color: #9240bc;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -406,12 +414,12 @@ Walker Nav
 
 #comment_area p.logged-in-as {
   font-size: 14px;
-  color: #262626;
+  color: var(--text);
   margin-bottom: 16px;
 }
 
 #comment_area p.logged-in-as a {
-  color: #9240bc;
+  color: var(--primary);
   font-weight: 600;
   text-decoration: none;
 }
@@ -430,7 +438,7 @@ Walker Nav
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 16px;
-  color: #262626;
+  color: var(--text);
   outline: 0;
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -443,7 +451,7 @@ Walker Nav
 #comment_area label {
   display: inline-block;
   margin-bottom: 8px;
-  color: #262626;
+  color: var(--text);
   font-weight: 600;
   font-size: 14px;
 }
@@ -451,16 +459,16 @@ Walker Nav
 /* Submit Button */
 #comment_area input#submit {
   background-color: #fff;
-  background-image: linear-gradient(#9240bc, #9240bc);
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-size: 12px 100%;
   background-repeat: no-repeat;
   background-position: left center;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 8px 24px;
-  color: #9240bc;
+  color: var(--primary);
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid #9240bc;
+  border: 1px solid var(--primary);
   cursor: pointer;
   font-size: 16px;
 }
@@ -474,12 +482,12 @@ Walker Nav
 #comment_area .required-field-message {
   display: block;
   margin-top: 8px;
-  color: #262626;
+  color: var(--text);
   font-size: 12px;
 }
 
 #comment_area .required-field-message span.required {
-  color: #9240bc;
+  color: var(--primary);
   font-weight: bold;
 }
 
@@ -504,14 +512,14 @@ Walker Nav
 
 .wp_pagenav .pages {
   font-weight: 600;
-  color: #262626;
+  color: var(--text);
   margin-right: 12px;
   font-size: 16px;
 }
 
 .wp_pagenav .pages span {
   margin: 0 4px;
-  color: #9240bc;
+  color: var(--primary);
 }
 .wp_pagenav .pages {
   margin: 0 8px;
@@ -523,7 +531,7 @@ Walker Nav
   border-radius: 8px;
   background: #fff;
   border: 1px solid #ddd;
-  color: #262626;
+  color: var(--text);
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
@@ -531,15 +539,15 @@ Walker Nav
 }
 
 .wp_pagenav .page-numbers:hover {
-  background-color: #9240bc;
+  background-color: var(--primary);
   color: #fff;
-  border-color: #9240bc;
+  border-color: var(--primary);
 }
 
 .wp_pagenav .page-numbers.current {
-  background-color: #9240bc;
+  background-color: var(--primary);
   color: #fff;
-  border-color: #9240bc;
+  border-color: var(--primary);
   cursor: default;
 }
 
@@ -604,14 +612,14 @@ Walker Nav
 
 .err-page .title_404 {
   font-size: 72px;
-  color: #9240bc;
+  color: var(--primary);
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .err-page p {
   font-size: 18px;
-  color: #262626;
+  color: var(--text);
   margin-bottom: 30px;
   font-weight: 500;
 }
@@ -628,16 +636,16 @@ Walker Nav
 
 .err-page input[type="submit"] {
   background-color: #fff;
-  background-image: linear-gradient(#9240bc, #9240bc);
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-size: 12px 100%;
   background-repeat: no-repeat;
   background-position: left center;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 8px 24px;
-  color: #9240bc;
+  color: var(--primary);
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid #9240bc;
+  border: 1px solid var(--primary);
 }
 
 .err-page input[type="submit"]:hover {
@@ -650,7 +658,7 @@ Walker Nav
   display: inline-block;
   margin-top: 20px;
   padding: 8px 24px;
-  background-color: #9240bc;
+  background-color: var(--primary);
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
