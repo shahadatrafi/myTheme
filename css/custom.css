@@ -25,7 +25,7 @@ h6 {
 
 img {
   width: 100%;
-  /* height: auto; */
+  height: auto;
 }
 
 body p {
@@ -668,4 +668,73 @@ Walker Nav
 
 .err-page a:hover {
   background-color: #732f96;
+}
+
+
+/* ========== Service Section Styling ========== */
+
+.service_item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0 12px rgba(146, 64, 188, 0.1);
+  text-align: left;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 24px;
+}
+
+.service_item:hover {
+  box-shadow: 0 8px 20px rgba(146, 64, 188, 0.25);
+  transform: translateY(-5px);
+}
+
+.service_title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 16px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: inline-block; /* needed for background effect */
+}
+
+.service_item:hover .service_title {
+  color: var(--primary);
+  background-size: 100% 1px;
+}
+
+.service_img img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.service_btn {
+  background-color: #fff;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-size: 12px 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 10px 24px;
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.service_btn:hover {
+  background-size: 100% 100%;
+  color: #fff;
 }
