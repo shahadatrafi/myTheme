@@ -16,11 +16,11 @@ get_header(); ?>
                     <div class="col-md-4">
                         <div class="service_item">
                             <div class="service_img">
-                                <?php echo the_post_thumbnail('service');?>
+                                <?php echo the_post_thumbnail('service'); ?>
                             </div>
-                            <h3 class="service_title"><?php the_title();?></h3>
-                            <?php the_excerpt();?>
-                            <a href="<?php echo get_permalink(); ?>"><button class="service_btn">Buy Now</button></a> 
+                            <h3 class="service_title"><?php the_title(); ?></h3>
+                            <?php the_excerpt(); ?>
+                            <a href="<?php echo get_permalink(); ?>"><button class="service_btn">Buy Now</button></a>
                         </div>
                     </div>
 

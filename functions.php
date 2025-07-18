@@ -12,6 +12,9 @@ include_once('inc/enqueue.php');
 // Custom post register 
 include_once('inc/custom_post.php');
 
+// Shortcode register 
+include_once('inc/shortcode.php');
+
 // my theme functions here 
 include_once('inc/theme_functions.php');
 
